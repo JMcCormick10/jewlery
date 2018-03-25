@@ -31,7 +31,7 @@ if (function_exists('add_theme_support'))
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-
+    add_image_size('banner', 2000, '', true);
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
 	'default-color' => 'FFF',
@@ -106,6 +106,11 @@ function html5blank_header_scripts()
         wp_enqueue_script('popper_dependancy', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js');
         
         wp_enqueue_script('boostrap_js', get_template_directory_uri() .'/js/lib/bootstrap.min.js');
+        
+        wp_enqueue_script('fontawesome__js', 'https://use.fontawesome.com/releases/v5.0.8/js/solid.js');
+
+       
+        wp_enqueue_script('fontawesome_js', 'https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js');
     }
 }
 
@@ -139,9 +144,11 @@ function html5blank_styles()
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+        'extra-menu' => __('Extra Menu', 'html5blank'), // Extra Navigation if needed (duplicate as many as you need!)
+        'left-header-menu' =>  __('Left Header Menu'),
+        'right-header-menu' => __('Right Header Menu'),
+        'footer-menu' => __('Footer Menu')
     ));
 }
 
@@ -461,5 +468,47 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
+
+
+
+/*-----------------------------------------------------*\
+                    CUSTOM FUNCTIONS
+\*-----------------------------------------------------*/
+
+
+/*------------------------------------*\
+                ACF
+\*------------------------------------*/
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+/*------------------------------------*\
+                WOOCOMMERCE
+\*------------------------------------*/
+
+/**
+ * Ensure cart contents update when products are added to the cart via AJAX
+ */
+function my_header_add_to_cart_fragment( $fragments ) {
+    ob_start();
+    $count = WC()->cart->cart_contents_count;
+    ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+    if ( $count > 0 ) {
+        ?>
+        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+        <?php            
+    }
+        ?></a><?php
+ 
+    $fragments['a.cart-contents'] = ob_get_clean();
+     
+    return $fragments;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
+
+
 
 ?>

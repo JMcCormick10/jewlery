@@ -1,0 +1,32 @@
+2018-03-15T21:44:35+00:00 CRITICAL Uncaught Error: Call to undefined function get_partial_template() in /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/header.php:65
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template.php(688): require_once()
+#1 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template.php(647): load_template('/Applications/X...', true)
+#2 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/page-templates/template-home.php(2): get_header()
+#4 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template-loader.php(74): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-blog-header.php(19): require_once('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/jewlery/index.php(17): require('/Applications/X...')
+#7 {main}
+  thrown
+
+2018-03-15T21:44:35+00:00 CRITICAL Uncaught Error: Call to undefined function get_partial_template() in /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/header.php:65
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template.php(688): require_once()
+#1 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template.php(647): load_template('/Applications/X...', true)
+#2 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/404.php(1): get_header()
+#4 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template-loader.php(74): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-blog-header.php(19): require_once('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/jewlery/index.php(17): require('/Applications/X...')
+#7 {main}
+  thrown
+
+2018-03-17T15:48:25+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_partial() in /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/page-templates/template-home.php:3
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template-loader.php(74): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/jewlery/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown
+

@@ -1,7 +1,16 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
-				
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<nav class="footer-nav">
+								<?php wp_nav_menu(array('menu' => 'footer-menu'));?>
+								<a class="email-contact" href="mailto: jmccormic1024@gmail.com">email@email.com</a>
+							</nav>
+							<p class="copyright text-center">Una Lune All Rights Reserved 2018</p>
+						</div>
+					</div>
+				</div>
 			</footer>
 			<!-- /footer -->
 

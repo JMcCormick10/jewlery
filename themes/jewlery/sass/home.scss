@@ -1,0 +1,88 @@
+/*------------------------------------*\
+                BANNER IMAGE
+\*------------------------------------*/
+.banner-image-section{
+    position: relative;
+    min-height: 565px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    
+    .banner-image {
+        width: 100%;
+    }
+    .banner-text-container{
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 30%;
+        text-align: center;
+        border-radius: 2px;
+        
+        top: 40%;
+        &.banner-text-left{
+            left: 0;
+        }   
+        &.banner-text-right{
+            right: 0;
+            
+        }
+        .banner-text{
+            color: $white;
+            font-size: 50px;
+        }
+    }
+}
+
+/*------------------------------------*\
+                CATEGORIES
+\*------------------------------------*/
+.shop-intention-title {
+    margin-bottom: 20px;
+}
+.category-container {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    margin-bottom: 20px;
+    .category-info-container {
+        display: none;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        .category-info {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            color: $white;
+            width: 100%;
+            transform:translate(-50%, -50%);
+            .intention-title {
+                display: inline-block;
+                padding-bottom: 5px;
+                border-bottom: 1px solid $white;
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        .category-info-container {
+            display: block;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    #sb_instagram.sbi_col_6.sbi_disable_mobile #sbi_images .sbi_item{
+        width: 100%;
+        height: auto;
+    }
+}
