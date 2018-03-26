@@ -29,9 +29,28 @@ article:last-of-type {
 @media screen and (max-width: 992px) {
   .basic-section .section-title {
     margin-top: 20px; } }
-.header {
+.search-container {
+  display: inline-block;
+  padding-right: 10px;
   position: relative;
-  overflow: hidden; }
+  width: 70%; }
+  .search-container input {
+    border-radius: 8px;
+    border: 1px solid #8ed0e8;
+    width: 100%;
+    height: 25px;
+    padding-left: 3px; }
+  .search-container button {
+    position: absolute;
+    right: 3%;
+    top: 7px;
+    background-color: transparent;
+    border: none; }
+    .search-container button .fa-search {
+      color: #8ed0e8; }
+
+.header {
+  position: relative; }
 
 .background-fade {
   position: absolute;
@@ -51,22 +70,56 @@ article:last-of-type {
             MOBILE NAV
 \*------------------------------------*/
 .mobile-nav-container {
+  display: none;
   padding: 20px;
   position: absolute;
   right: -300px;
   width: 300px;
+  top: 0;
   transition: 0.3s;
   z-index: 3; }
+  .mobile-nav-container .woocommerce-cart-icon-container {
+    display: inline-block;
+    margin-right: 0;
+    text-align: right;
+    vertical-align: middle;
+    width: 29%; }
+    .mobile-nav-container .woocommerce-cart-icon-container a {
+      color: grey; }
   .mobile-nav-container .close-menu {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 25px; }
+    .mobile-nav-container .close-menu:hover {
+      cursor: pointer; }
   .mobile-nav-container .mobile-nav {
-    padding: 40px; }
+    height: 100%;
+    margin-top: 50px; }
+    .mobile-nav-container .mobile-nav .search-container {
+      margin-bottom: 20px; }
+    .mobile-nav-container .mobile-nav ul {
+      padding-left: 0;
+      margin-bottom: 0; }
+      .mobile-nav-container .mobile-nav ul li {
+        list-style: none;
+        border-bottom: 1px solid #684e69; }
+        .mobile-nav-container .mobile-nav ul li a {
+          font-size: 20px;
+          color: #684e69;
+          padding-left: 10px;
+          display: block;
+          padding: 20px 10px; }
+        .mobile-nav-container .mobile-nav ul li:hover {
+          background-color: #684e69;
+          text-decoration: none; }
+          .mobile-nav-container .mobile-nav ul li:hover a {
+            color: #fff;
+            text-decoration: none; }
 
 .mobile-nav-container-show {
   right: 0;
+  display: block;
   background-color: #fff; }
 
 .mobile-menu-button {
@@ -83,11 +136,13 @@ article:last-of-type {
   .top-nav .search-container {
     display: inline-block;
     padding-right: 10px;
-    position: relative; }
+    position: relative;
+    width: auto; }
     .top-nav .search-container input {
       border-radius: 8px;
       border: 1px solid #8ed0e8;
-      width: 100%; }
+      width: 100%;
+      height: auto; }
     .top-nav .search-container button {
       position: absolute;
       right: 3%;
@@ -212,15 +267,25 @@ article:last-of-type {
   .banner-image-section .banner-text-container {
     position: absolute;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 30%;
+    width: 100%;
     text-align: center;
     border-radius: 2px;
-    top: 40%; }
+    height: 100%;
+    top: 0%; }
     .banner-image-section .banner-text-container.banner-text-left {
-      left: 0; }
+      left: 0;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), black); }
+      .banner-image-section .banner-text-container.banner-text-left .banner-text {
+        position: absolute;
+        left: 10%;
+        top: 20%; }
     .banner-image-section .banner-text-container.banner-text-right {
-      right: 0; }
+      right: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
+      .banner-image-section .banner-text-container.banner-text-right .banner-text {
+        position: absolute;
+        right: 10%;
+        top: 20%; }
     .banner-image-section .banner-text-container .banner-text {
       color: #fff;
       font-size: 50px; }
@@ -264,6 +329,9 @@ article:last-of-type {
     .category-container:hover .category-info-container {
       display: block; }
 
+@media screen and (max-width: 992px) {
+  .top-nav {
+    padding: 5px 0; } }
 @media screen and (max-width: 767px) {
   #sb_instagram.sbi_col_6.sbi_disable_mobile #sbi_images .sbi_item {
     width: 100%;

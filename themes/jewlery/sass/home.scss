@@ -15,18 +15,28 @@
     .banner-text-container{
         position: absolute;
         z-index: 2;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 30%;
+        width: 100%;
         text-align: center;
         border-radius: 2px;
-        
-        top: 40%;
+        height: 100%;
+        top: 0%;
         &.banner-text-left{
             left: 0;
+            background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+            .banner-text{
+                position: absolute;
+                left: 10%;
+                top: 20%;
+            }
         }   
         &.banner-text-right{
             right: 0;
-            
+            background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+            .banner-text{
+                position: absolute;
+                right: 10%;
+                top: 20%;
+            }
         }
         .banner-text{
             color: $white;
@@ -78,6 +88,11 @@
         .category-info-container {
             display: block;
         }
+    }
+}
+@media screen and (max-width: 992px){
+    .top-nav {
+        padding: 5px 0;
     }
 }
 @media screen and (max-width: 767px){

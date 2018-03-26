@@ -37,8 +37,6 @@
 						<div class="search-container">
 							<?php get_template_part('searchform'); ?>
 						</div>
-						<?php wp_nav_menu(array('menu' => 'left-header-menu'));?>
-						<?php wp_nav_menu(array('menu' => 'right-header-menu'));?>
 						<div class="woocommerce-cart-icon-container">
 							<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 								$count = WC()->cart->cart_contents_count;
@@ -51,6 +49,8 @@
 									?></a>
 								<?php } ?>
 						</div>
+						<?php wp_nav_menu(array('menu' => 'left-header-menu'));?>
+						<?php wp_nav_menu(array('menu' => 'right-header-menu'));?>
 					</div>
 				</div>
 				<div class="top-nav">

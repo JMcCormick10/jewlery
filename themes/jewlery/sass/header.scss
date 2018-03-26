@@ -1,7 +1,29 @@
+.search-container {
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+    width: 70%;
+    input {
+        border-radius: 8px;           
+        border:1px solid #8ed0e8;
+        width: 100%;
+        height: 25px;
+        padding-left: 3px;
+    }
+    button{
+        position: absolute;
+        right: 3%;
+        top: 7px;
+        background-color: transparent;
+        border: none;
+        .fa-search{
+            color: #8ed0e8;
+        }
+    } 
+}
 
 .header {
     position: relative;
-    overflow: hidden;
 
 }
 .background-fade {
@@ -22,24 +44,68 @@
             MOBILE NAV
 \*------------------------------------*/
 .mobile-nav-container {
+    display: none;
     padding: 20px;
     position: absolute;
     right: -300px;
     width: 300px;
+    top: 0;
     transition: 0.3s;
     z-index: 3;
+    .woocommerce-cart-icon-container{
+        display: inline-block;
+        margin-right: 0;
+        text-align: right;
+        vertical-align: middle;
+        width: 29%;
+        a {
+            color: grey;
+        }
+    }
     .close-menu {
         position: absolute;
         top: 10px;
         right: 15px;
         font-size: 25px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .mobile-nav {
-        padding: 40px;
+        height: 100%;
+        margin-top: 50px;
+        .search-container {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+                list-style: none;
+                border-bottom: 1px solid $purple;
+                a {
+                    font-size: 20px;
+                    color: $purple;
+                    padding-left: 10px;
+                    display: block;
+                    padding: 20px 10px;
+
+                }
+                &:hover {
+                    background-color: $purple;
+                    text-decoration: none;
+                    a{
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
     }
 }
 .mobile-nav-container-show {
     right:0;
+    display: block;
     background-color: $white;
 }
 .mobile-menu-button {
@@ -58,10 +124,12 @@
         display: inline-block;
         padding-right: 10px;
         position: relative;
+        width: auto;
         input {
             border-radius: 8px;           
             border:1px solid #8ed0e8;
             width: 100%;
+            height: auto;
         }
         button{
             position: absolute;
