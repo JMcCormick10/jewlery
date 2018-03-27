@@ -47,10 +47,19 @@ article:last-of-type{
         text-indent : 50px;
     }
 }
+.inner-wrapper {
+    max-width: 75%;
+    margin: 0 auto;
+}
 @media screen and (max-width: 992px){
     .basic-section {
         .section-title {
             margin-top: 20px;
         }
+    }
+}
+@media screen and (max-width: 600px){
+    .inner-wrapper {
+        width: 100%;
     }
 }
