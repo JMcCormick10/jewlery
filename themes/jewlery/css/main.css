@@ -2,6 +2,14 @@
 * {
   font-family: 'Open Sans', sans-serif; }
 
+html {
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  overflow: auto;
+  height: 100%; }
+
 h2 {
   font-size: 30px; }
 
@@ -10,14 +18,16 @@ p {
   line-height: 28px; }
 
 section {
-  padding: 40px 0; }
+  padding: 40px 0 0 0px; }
 
 article {
-  padding: 40px 0;
+  padding: 5px 0;
   border-bottom: 2px solid #e4c3cf; }
 
 article:last-of-type {
-  border-bottom: 0; }
+  border-bottom: 0;
+  padding: 0;
+  padding-top: 20px; }
 
 .basic-section .basic-section-image {
   width: 100%; }
@@ -185,6 +195,9 @@ article:last-of-type {
                 BANNER ALERT
 \*------------------------------------*/
 .banner-alert {
+  -webkit-box-shadow: inset -2px 14px 5px -10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset -2px 14px 5px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -2px 14px 5px -10px rgba(0, 0, 0, 0.1);
   background-color: #e4c3cf;
   padding: 5px 0; }
   .banner-alert p {
@@ -221,12 +234,13 @@ article:last-of-type {
     padding: 0 15px; } }
 .footer {
   background-color: #684e69;
-  padding: 30px 0; }
+  padding: 30px 0 10px 0; }
   .footer .footer-nav {
     overflow: auto; }
     .footer .footer-nav ul li {
       width: 25%;
       float: left;
+      padding-left: 25px;
       list-style: none;
       margin-bottom: 10px; }
       .footer .footer-nav ul li a {
@@ -236,13 +250,14 @@ article:last-of-type {
       width: 25%;
       margin-bottom: 10px;
       color: #fff;
-      font-size: 15px; }
+      font-size: 15px;
+      padding-left: 25px; }
   .footer .copyright {
     display: block;
     clear: both;
     font-size: 14px;
     color: #fff;
-    margin: 20px 0; }
+    margin: 20px 0 0 0; }
 
 @media screen and (max-width: 992px) {
   .footer .footer-nav ul {
@@ -256,13 +271,18 @@ article:last-of-type {
     .footer .footer-nav ul {
       padding-left: 0; }
       .footer .footer-nav ul li {
-        width: 100%; } }
+        width: 100%;
+        padding-left: 0; }
+        .footer .footer-nav ul li a {
+          padding-left: 0; }
+    .footer .footer-nav .email-contact {
+      padding-left: 0; } }
 /*------------------------------------*\
                 BANNER IMAGE
 \*------------------------------------*/
 .banner-image-section {
   position: relative;
-  min-height: 565px;
+  min-height: 450px;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
