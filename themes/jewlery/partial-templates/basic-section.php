@@ -27,6 +27,5 @@ if (have_rows('basic_section')):?>
         </div>
     </article>
 <?php endwhile;?>
-</section>
 <?php
 endif;
