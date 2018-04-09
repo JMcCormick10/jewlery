@@ -56,7 +56,7 @@
 				<div class="top-nav">
 					<div class="container">
 						<div class="row align-items-center">
-							<div class="col-lg-12 col-6 text-md-left text-lg-center text-center">
+							<div class="col-lg-12 col-6 text-md-left">
 								 <div class="search-container hidden-md-down">
 									<?php get_template_part('searchform'); ?>
 								</div> 

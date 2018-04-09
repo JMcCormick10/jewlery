@@ -18,6 +18,8 @@ require_once(get_template_directory() .'/includes/acf/moon-phases.php');
 	Theme Support
 \*------------------------------------*/
 
+require 'includes/moon_api.php';
+
 if (!isset($content_width))
 {
     $content_width = 900;
