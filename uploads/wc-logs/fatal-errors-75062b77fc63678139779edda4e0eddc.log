@@ -30,3 +30,35 @@ Stack trace:
 #3 {main}
   thrown
 
+2018-03-30T09:45:59+00:00 CRITICAL Uncaught Error: Function name must be a string in /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/partial-templates/home-page-product-categories.php:19
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template.php(690): require()
+#1 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template.php(647): load_template('/Applications/X...', false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/page-templates/template-home.php(5): get_template_part('partial-templat...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template-loader.php(74): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-blog-header.php(19): require_once('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/jewlery/index.php(17): require('/Applications/X...')
+#7 {main}
+  thrown
+
+2018-03-30T14:15:41+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/woocommerce/archive-product.php:42
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/plugins/woocommerce/templates/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template-loader.php(74): include('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-blog-header.php(19): require_once('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/jewlery/index.php(17): require('/Applications/X...')
+#5 {main}
+  thrown
+
+2018-04-07T14:48:04+00:00 CRITICAL Uncaught Error: Call to undefined function woo_pagination() in /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/themes/jewlery/woocommerce/archive-product.php:131
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-content/plugins/woocommerce/templates/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-includes/template-loader.php(74): include('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/jewlery/wp-blog-header.php(19): require_once('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/jewlery/index.php(17): require('/Applications/X...')
+#5 {main}
+  thrown
+

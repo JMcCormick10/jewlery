@@ -11,6 +11,9 @@
 
 // Load any external files you have here
 
+require_once(get_template_directory() .'/actions_hooks_woocommerce/shop-page.php');
+require_once(get_template_directory() .'/includes/acf/moon-phases.php');
+
 /*------------------------------------*\
 	Theme Support
 \*------------------------------------*/
@@ -99,6 +102,7 @@ function html5blank_header_scripts()
         wp_enqueue_script('modernizr'); // Enqueue it!
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_localize_script('html5blankscripts', 'unaLune', array('site_url' => site_url()));
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
 
         wp_enqueue_script('tether_dependancy', 'https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js');
@@ -111,6 +115,7 @@ function html5blank_header_scripts()
 
        
         wp_enqueue_script('fontawesome_js', 'https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js');
+        wp_enqueue_script('select_2_js', get_template_directory_uri() .'/js/lib/select2.min.js');
     }
 }
 
@@ -134,7 +139,7 @@ function html5blank_styles()
 
     //BOOTSTRAP 4
     wp_enqueue_style('bootstrap_4', get_template_directory_uri() .'/css/lib/bootstrap.min.css');
-
+    wp_enqueue_style('select2_css', get_template_directory_uri() .'/css/lib/select2.min.css');
 
     //CUSTOM STYLES
     wp_enqueue_style('main_stylesheet', get_template_directory_uri() .'/css/main.css');
@@ -489,9 +494,9 @@ if( function_exists('acf_add_options_page') ) {
                 WOOCOMMERCE
 \*------------------------------------*/
 
-/**
- * Ensure cart contents update when products are added to the cart via AJAX
- */
+/*-----------------------------*\
+            CART ICON
+\*-----------------------------*/
 function my_header_add_to_cart_fragment( $fragments ) {
     ob_start();
     $count = WC()->cart->cart_contents_count;
@@ -511,4 +516,25 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment
 
 
 
-?>
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+/*-----------------------------*\
+  GET RID OF RESULT COUNT TEXT
+\*-----------------------------*/
+// remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+
+/*-----------------------------*\
+      CHANGE PAGE TITLE
+\*-----------------------------*/
+add_filter( 'woocommerce_page_title', 'custom_woocommerce_page_title');
+function custom_woocommerce_page_title( $page_title ) {
+  if( $page_title != 'Shop' ) {
+    return 'Shop By ' . $page_title;
+  }
+  else {
+      return $page_title;
+  }
+}

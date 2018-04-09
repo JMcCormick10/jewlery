@@ -43,7 +43,7 @@ msgstr "A 12-character Akismet API key. Available at akismet.com/get/"
 msgid "(%1$s%)"
 msgstr "(%1$s%)"
 
-#: class.akismet.php:210
+#: class.akismet.php:211
 msgid "Comment discarded."
 msgstr "Comment discarded."
 
@@ -87,7 +87,7 @@ msgstr "Used by millions, Akismet is quite possibly the best way in the world to
 msgid "Akismet Settings"
 msgstr "Akismet Settings"
 
-#. #-#-#-#-#  akismet-code.pot (Akismet Anti-Spam 4.0.2)  #-#-#-#-#
+#. #-#-#-#-#  akismet-code.pot (Akismet Anti-Spam 4.0.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: class.akismet-admin.php:95 class.akismet-admin.php:98
 msgid "Akismet Anti-Spam"
@@ -173,7 +173,7 @@ msgstr "Checking for Spam"
 msgid "Failed to connect to Akismet."
 msgstr "Failed to connect to Akismet."
 
-#: class.akismet.php:452
+#: class.akismet.php:492
 msgid "Comment not found."
 msgstr "Comment not found."
 
@@ -749,11 +749,11 @@ msgstr "There&#8217;s nothing in your <a href='%s'>spam queue</a> at the moment.
 msgid "Cleaning up spam takes time."
 msgstr "Cleaning up spam takes time."
 
-#: class.akismet.php:1208
+#: class.akismet.php:1248
 msgid "Akismet %s requires WordPress %s or higher."
 msgstr "Akismet %s requires WordPress %s or higher."
 
-#: class.akismet.php:1208
+#: class.akismet.php:1248
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 msgstr "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 

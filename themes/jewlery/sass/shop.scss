@@ -1,0 +1,93 @@
+.shop-banner-image {
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.shop-banner-text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $white;
+    padding: 25px 50px 25px 50px;
+    margin-bottom: 50px;
+    .shop-banner-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .shop-banner-description{
+        line-height: 28px;
+        font-size: 14px;
+    }
+}
+.woocommerce-shop-container {
+    margin-top: -450px;
+    .shop-list-wrapper {
+        background-color: $white;
+        padding: 20px 10px 0 20px;
+        border:2px solid $pink;
+        border-bottom: 0;
+        .woocommerce-products-header {
+            float: left;
+            width: 50% ;
+            h1{
+                font-size: 30px;
+            }
+            .cat-search-container {
+                select {
+                    width: 40%;
+                    height: 30px;
+                    margin: 15px 0;
+                }
+            }
+        }
+        .woocommerce-ordering {
+            float: right;
+            width: 20%;
+          select {
+              width: 100%;
+              height: 30px;
+          }
+        }
+    }
+    ul.products {
+        margin-bottom: 0;
+        li.product {
+            .woocommerce-loop-product__title {
+                color: $purple;
+                font-size: 16px;
+            }
+            .star-rating {
+                font-size: 15px;
+            }
+            .price {
+                color: $purple;
+                font-size: 14px;
+            }
+        }
+        a.button {
+            background-color: $purple;
+            color: $white;
+            font-size: 12px;
+            border: 1px solid $purple;
+            transition: 0.3s;
+            &:hover{
+                background-color: $white;
+                color: $purple;
+
+            }
+        }
+
+    }
+}
+.woocommerce .star-rating span {
+    font-family:star;
+    color: #e4d530;
+
+ }
+ .sidebar {
+     display: none;
+ }
+ @media screen and (max-width: 576px){
+     .full-width-mobile-container {
+         padding: 0;
+     }
+ }
