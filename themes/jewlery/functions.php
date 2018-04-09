@@ -15,6 +15,8 @@
 	Theme Support
 \*------------------------------------*/
 
+require 'includes/moon_api.php';
+
 if (!isset($content_width))
 {
     $content_width = 900;
