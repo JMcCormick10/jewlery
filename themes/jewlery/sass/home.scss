@@ -20,27 +20,46 @@
         border-radius: 2px;
         height: 100%;
         top: 0%;
-        &.banner-text-left{
+        &.banner-text-top-left{
             left: 0;
             background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
             .banner-text{
                 position: absolute;
                 left: 10%;
-                top: 20%;
+                top: 12%;
             }
-        }   
-        &.banner-text-right{
+        }
+        &.banner-text-bottom-left{
+            left: 0;
+            background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+            .banner-text{
+                position: absolute;
+                left: 10%;
+                top: 55%;
+            }
+        }
+        &.banner-text-top-right{
             right: 0;
             background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
             .banner-text{
                 position: absolute;
                 right: 10%;
-                top: 20%;
+                top: 12%;
+            }
+        }
+        &.banner-text-bottom-right{
+            right: 0;
+            background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+            .banner-text{
+                position: absolute;
+                right: 10%;
+                top: 55%;
             }
         }
         .banner-text{
             color: $white;
             font-size: 50px;
+            width: 30%;
         }
     }
 }
