@@ -124,6 +124,7 @@
         padding-right: 10px;
         position: relative;
         width: auto;
+        padding-left: 5.5%;
         input {
             border-radius: 8px;           
             border:1px solid #8ed0e8;
@@ -195,6 +196,18 @@
     padding: 5px 0;
     p{
         margin-bottom: 0;
+    }
+}
+
+.alert-text{
+    a {
+        color: inherit;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: none;
     }
 }
 /*------------------------------------*\
