@@ -21,11 +21,10 @@ section {
   padding: 30px 0 0 0px; }
 
 article {
-  padding: 0;  }
+  padding: 0; }
 
 article:first-of-type {
-  border-bottom: 2px solid #e4c3cf;
-}
+  border-bottom: 2px solid #e4c3cf; }
 
 article:last-of-type {
   border-bottom: 0;
@@ -38,7 +37,6 @@ article:last-of-type {
   margin-bottom: 20px; }
 .basic-section .section-content {
   text-indent: 50px; }
-
 
 .inner-wrapper {
   max-width: 75%;
@@ -157,7 +155,7 @@ article:last-of-type {
   padding-right: 10px;
   position: relative;
   width: auto;
-  padding-left: 5.5%;}
+  padding-left: 5.5%; }
   .top-nav .search-container input {
     border-radius: 8px;
     border: 1px solid #8ed0e8;
@@ -206,19 +204,14 @@ article:last-of-type {
   background-color: #e4c3cf;
   padding: 5px 0; }
   .banner-alert p {
-    margin-bottom: 0;
+    margin-bottom: 0; }
 
-  }
-
-  .alert-text a {
-    color: inherit;
-    cursor: pointer;
-  }
-
-  .alert-text a:hover {
-    color: white;
-    text-decoration: none;
-  }
+.alert-text a {
+  color: inherit;
+  cursor: pointer; }
+.alert-text a:hover {
+  color: white;
+  text-decoration: none; }
 
 /*------------------------------------*\
                 WOOCOMMERCE
@@ -314,23 +307,38 @@ article:last-of-type {
     border-radius: 2px;
     height: 100%;
     top: 0%; }
-    .banner-image-section .banner-text-container.banner-text-left {
+    .banner-image-section .banner-text-container.banner-text-top-left {
       left: 0;
       background: linear-gradient(to left, rgba(0, 0, 0, 0), black); }
-      .banner-image-section .banner-text-container.banner-text-left .banner-text {
+      .banner-image-section .banner-text-container.banner-text-top-left .banner-text {
         position: absolute;
         left: 10%;
-        top: 20%; }
-    .banner-image-section .banner-text-container.banner-text-right {
+        top: 12%; }
+    .banner-image-section .banner-text-container.banner-text-bottom-left {
+      left: 0;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), black); }
+      .banner-image-section .banner-text-container.banner-text-bottom-left .banner-text {
+        position: absolute;
+        left: 10%;
+        top: 55%; }
+    .banner-image-section .banner-text-container.banner-text-top-right {
       right: 0;
       background: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
-      .banner-image-section .banner-text-container.banner-text-right .banner-text {
+      .banner-image-section .banner-text-container.banner-text-top-right .banner-text {
         position: absolute;
         right: 10%;
-        top: 20%; }
+        top: 12%; }
+    .banner-image-section .banner-text-container.banner-text-bottom-right {
+      right: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
+      .banner-image-section .banner-text-container.banner-text-bottom-right .banner-text {
+        position: absolute;
+        right: 10%;
+        top: 55%; }
     .banner-image-section .banner-text-container .banner-text {
       color: #fff;
-      font-size: 50px; }
+      font-size: 50px;
+      width: 30%; }
 
 /*------------------------------------*\
                 CATEGORIES
@@ -450,7 +458,4 @@ article:last-of-type {
   .full-width-mobile-container {
     padding: 0; } }
 
-
-
 /*# sourceMappingURL=main.css.map */
-

@@ -55,7 +55,7 @@ $moon_content = get_field($moon_name_con,'option');
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12 flex-lg-last flex-first">
-                    <img class="basic-section-image" src="<?php echo $moon_details['url'];?>" alt="<?php echo $image_alt;?>"/>
+                    <img class="basic-section-image" src="<?php echo $moon_details['url'];?>" alt=""/>
                 </div>
                 <div class="col-lg-6 col-12">
                     <h2 class="section-title">Current Moon Phase</h2>
