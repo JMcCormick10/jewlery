@@ -528,6 +528,7 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 \*-----------------------------*/
 // remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 
+
 /*-----------------------------*\
       CHANGE PAGE TITLE
 \*-----------------------------*/
@@ -540,3 +541,15 @@ function custom_woocommerce_page_title( $page_title ) {
       return $page_title;
   }
 }
+
+
+/*------------------------------------------------------*\
+      CHANGING DISPLAY ORDER ON PRODUCT SINGLE PAGE
+\*------------------------------------------------------*/\
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
+
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 40 );
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 50 );
