@@ -483,5 +483,12 @@ article:last-of-type {
 @media screen and (max-width: 576px) {
   .full-width-mobile-container {
     padding: 0; } }
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+  flex: none;
+  max-width: none; }
+
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+  flex: none;
+  max-width: none; }
 
 /*# sourceMappingURL=main.css.map */
