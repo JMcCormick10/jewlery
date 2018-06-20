@@ -17,8 +17,8 @@ if (have_rows('basic_section')):?>
                         <img class="basic-section-image" src="<?php echo $image_src;?>" alt="<?php echo $image_alt;?>"/>
                     </div>
                     <div class="col-lg-6 col-12">
-                        <h2 class="section-title"><?php the_sub_field('section_heading');?> </h2>
-                        <div class="section-content">
+                        <h2 class="section-title text-center"><?php the_sub_field('section_heading');?> </h2>
+                        <div class="section-content text-center">
                             <?php the_sub_field('section_content');?>
                         </div>
                     </div>

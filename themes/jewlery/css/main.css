@@ -33,8 +33,10 @@ article:last-of-type {
 
 .basic-section .basic-section-image {
   width: 100%; }
+
 .basic-section .section-title {
   margin-bottom: 20px; }
+
 .basic-section .section-content {
   text-indent: 50px; }
 
@@ -45,9 +47,11 @@ article:last-of-type {
 @media screen and (max-width: 992px) {
   .basic-section .section-title {
     margin-top: 20px; } }
+
 @media screen and (max-width: 480px) {
   .inner-wrapper {
     max-width: 90%; } }
+
 .search-container {
   display: inline-block;
   padding-right: 10px;
@@ -169,6 +173,7 @@ article:last-of-type {
     border: none; }
     .top-nav .search-container button .fa-search {
       color: #8ed0e8; }
+
 .top-nav .nav-logo-container {
   display: inline-block; }
   .top-nav .nav-logo-container .header-nav {
@@ -187,6 +192,7 @@ article:last-of-type {
     padding: 0 20px; }
   .top-nav .nav-logo-container .logo-container {
     display: inline-block; }
+
 .top-nav .woocommerce-cart-icon-container {
   display: inline-block;
   vertical-align: middle;
@@ -209,6 +215,7 @@ article:last-of-type {
 .alert-text a {
   color: inherit;
   cursor: pointer; }
+
 .alert-text a:hover {
   color: white;
   text-decoration: none; }
@@ -242,6 +249,7 @@ article:last-of-type {
 @media screen and (max-width: 1200px) {
   .top-nav .nav-logo-container .header-nav ul li {
     padding: 0 15px; } }
+
 .footer {
   background-color: #684e69;
   padding: 30px 0 10px 0; }
@@ -274,6 +282,7 @@ article:last-of-type {
     padding-left: 0; }
     .footer .footer-nav ul li {
       width: 50%; } }
+
 @media screen and (max-width: 767px) {
   .footer .footer-nav {
     display: block;
@@ -287,58 +296,12 @@ article:last-of-type {
           padding-left: 0; }
     .footer .footer-nav .email-contact {
       padding-left: 0; } }
+
 /*------------------------------------*\
                 BANNER IMAGE
 \*------------------------------------*/
 .banner-image-section {
-  position: relative;
-  min-height: 450px;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  background-size: cover; }
-  .banner-image-section .banner-image {
-    width: 100%; }
-  .banner-image-section .banner-text-container {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    text-align: center;
-    border-radius: 2px;
-    height: 100%;
-    top: 0%; }
-    .banner-image-section .banner-text-container.banner-text-top-left {
-      left: 0;
-      background: linear-gradient(to left, rgba(0, 0, 0, 0), black); }
-      .banner-image-section .banner-text-container.banner-text-top-left .banner-text {
-        position: absolute;
-        left: 10%;
-        top: 12%; }
-    .banner-image-section .banner-text-container.banner-text-bottom-left {
-      left: 0;
-      background: linear-gradient(to left, rgba(0, 0, 0, 0), black); }
-      .banner-image-section .banner-text-container.banner-text-bottom-left .banner-text {
-        position: absolute;
-        left: 10%;
-        top: 55%; }
-    .banner-image-section .banner-text-container.banner-text-top-right {
-      right: 0;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
-      .banner-image-section .banner-text-container.banner-text-top-right .banner-text {
-        position: absolute;
-        right: 10%;
-        top: 12%; }
-    .banner-image-section .banner-text-container.banner-text-bottom-right {
-      right: 0;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
-      .banner-image-section .banner-text-container.banner-text-bottom-right .banner-text {
-        position: absolute;
-        right: 10%;
-        top: 55%; }
-    .banner-image-section .banner-text-container .banner-text {
-      color: #fff;
-      font-size: 50px;
-      width: 30%; }
+  padding: 0; }
 
 /*------------------------------------*\
                 CATEGORIES
@@ -383,10 +346,12 @@ article:last-of-type {
 @media screen and (max-width: 992px) {
   .top-nav {
     padding: 5px 0; } }
+
 @media screen and (max-width: 767px) {
   #sb_instagram.sbi_col_6.sbi_disable_mobile #sbi_images .sbi_item {
     width: 100%;
     height: auto; } }
+
 .shop-banner-image {
   min-height: 500px;
   background-position: center;
@@ -483,6 +448,7 @@ article:last-of-type {
 @media screen and (max-width: 576px) {
   .full-width-mobile-container {
     padding: 0; } }
+
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
   flex: none;
   max-width: none; }
@@ -490,5 +456,3 @@ article:last-of-type {
 .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
   flex: none;
   max-width: none; }
-
-/*# sourceMappingURL=main.css.map */

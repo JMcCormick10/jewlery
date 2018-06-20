@@ -1,67 +1,9 @@
+
 /*------------------------------------*\
                 BANNER IMAGE
 \*------------------------------------*/
-.banner-image-section{
-    position: relative;
-    min-height: 450px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    background-size: cover;
-    
-    .banner-image {
-        width: 100%;
-    }
-    .banner-text-container{
-        position: absolute;
-        z-index: 2;
-        width: 100%;
-        text-align: center;
-        border-radius: 2px;
-        height: 100%;
-        top: 0%;
-        &.banner-text-top-left{
-            left: 0;
-            background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
-            .banner-text{
-                position: absolute;
-                left: 10%;
-                top: 12%;
-            }
-        }
-        &.banner-text-bottom-left{
-            left: 0;
-            background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
-            .banner-text{
-                position: absolute;
-                left: 10%;
-                top: 55%;
-            }
-        }
-        &.banner-text-top-right{
-            right: 0;
-            background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
-            .banner-text{
-                position: absolute;
-                right: 10%;
-                top: 12%;
-            }
-        }
-        &.banner-text-bottom-right{
-            right: 0;
-            background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
-            .banner-text{
-                position: absolute;
-                right: 10%;
-                top: 55%;
-            }
-        }
-        .banner-text{
-            color: $white;
-            font-size: 50px;
-            width: 30%;
-        }
-    }
+.banner-image-section {
+    padding: 0;
 }
 
 /*------------------------------------*\
@@ -120,4 +62,5 @@
         width: 100%;
         height: auto;
     }
+
 }

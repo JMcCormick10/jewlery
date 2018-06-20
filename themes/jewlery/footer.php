@@ -7,7 +7,7 @@
 								<?php wp_nav_menu(array('menu' => 'footer-menu'));?>
 								<a class="email-contact" href="mailto: jmccormic1024@gmail.com">email@email.com</a>
 							</nav>
-							<p class="copyright text-center">Una Lune All Rights Reserved 2018</p>
+							<p class="copyright text-center">unalune All Rights Reserved <?= date("Y")?></p>
 						</div>
 					</div>
 				</div>
