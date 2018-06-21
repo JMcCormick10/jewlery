@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-md-center text-lg-left">
-                    <h2 class="shop-intention-title">Shop by Intention</h2>
+                    <h2 class="shop-intention-title">Shop Moon Jewels</h2>
                 </div>
             </div>
             <div class="row">
