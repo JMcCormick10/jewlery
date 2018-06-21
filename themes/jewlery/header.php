@@ -65,7 +65,7 @@
 										<?php wp_nav_menu(array('menu' => 'left-header-menu'));?>
 									</nav>
 									<div class="logo-container">
-										<img src="<?php echo get_template_directory_uri().'/img/main_logo.png';?>" alt="main-logo"/>
+                                        <a href="<?= home_url(); ?>"><img src="<?php echo get_template_directory_uri().'/img/main_logo.png';?>" alt="main-logo"/></<a>
 									</div>
 									<nav class="header-nav right-header-nav hidden-md-down">
 										<?php wp_nav_menu(array('menu' => 'right-header-menu'));?>
