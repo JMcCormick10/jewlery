@@ -5,7 +5,7 @@
 						<div class="col-12">
 							<nav class="footer-nav">
 								<?php wp_nav_menu(array('menu' => 'footer-menu'));?>
-								<a class="email-contact" href="mailto: jmccormic1024@gmail.com">email@email.com</a>
+								<a class="email-contact" href="mailto: unalune@unalune.com">unalune@unalune.com</a>
 							</nav>
 							<p class="copyright text-center">unalune All Rights Reserved <?= date("Y")?></p>
 						</div>
