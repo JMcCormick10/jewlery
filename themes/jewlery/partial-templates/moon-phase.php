@@ -26,7 +26,7 @@ switch ($current_moon_phase){
         break;
     case 'Waxing Gibbous Moon':
         $moon_name     = 'waxing_gibbous';
-        $moon_name_con = 'waxing-gibbous_con';
+        $moon_name_con = 'waxing_gibbous_con';
         break;
     case 'Waning Gibbous Moon':
         $moon_name     = 'waning_gibbous';
@@ -50,6 +50,7 @@ $moon_content = get_field($moon_name_con,'option');
 
 
 ?>
+<?php var_dump($current_moon_phase) ?>
 <article class="moon_phase">
     <div class="inner-wrapper">
         <div class="container">
