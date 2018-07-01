@@ -34,9 +34,6 @@
 						<i class="fas fa-times"></i>
 					</div>
 					<div class="mobile-nav">
-						<div class="search-container">
-							<?php get_template_part('searchform'); ?>
-						</div>
 						<div class="woocommerce-cart-icon-container">
 							<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 								$count = WC()->cart->cart_contents_count;
@@ -54,12 +51,9 @@
 					</div>
 				</div>
 				<div class="top-nav">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-lg-12 col-6 text-md-left">
-								 <div class="search-container hidden-md-down">
-									<?php get_template_part('searchform'); ?>
-								</div> 
+					<div class="container w-100">
+						<div class="row mx-0 px-0">
+							<div class="col-lg-12 col-6 d-flex align-items-center justify-content-start justify-content-lg-center">
 								<div class="nav-logo-container">
 									<nav class="header-nav left-header-nav hidden-md-down">
 										<?php wp_nav_menu(array('menu' => 'left-header-menu'));?>
@@ -71,20 +65,20 @@
 										<?php wp_nav_menu(array('menu' => 'right-header-menu'));?>
 									</nav>
 								</div>
-								<div class="woocommerce-cart-icon-container hidden-md-down">
-									<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-										$count = WC()->cart->cart_contents_count;
-										?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
-										if ( $count > 0 ) {
-											?>
-											<span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
-											<?php
-										}
-											?></a>
-										<?php } ?>
-								</div>
-							</div>
-							<div class="col-6 hidden-lg-up text-right">
+                            </div>
+                            <div class="woocommerce-cart-icon-container hidden-md-down">
+                                <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+                                    $count = WC()->cart->cart_contents_count;
+                                    ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+                                    if ( $count > 0 ) {
+                                        ?>
+                                        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+                                        <?php
+                                    }
+                                        ?></a>
+                                    <?php } ?>
+                            </div>
+							<div class="col-6 hidden-lg-up d-flex justify-content-end align-items-end"">
 								<div class="mobile-menu-button">
 									<i class="fas fa-bars"></i>
 								</div>
