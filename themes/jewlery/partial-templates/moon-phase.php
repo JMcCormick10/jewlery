@@ -50,7 +50,7 @@ $moon_content = get_field($moon_name_con,'option');
 
 
 ?>
-<?php var_dump($current_moon_phase) ?>
+
 <article class="moon_phase">
     <div class="inner-wrapper">
         <div class="container">

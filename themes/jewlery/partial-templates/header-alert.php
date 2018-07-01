@@ -1,5 +1,5 @@
 <section class="banner-alert">
-    <div class="container">
+    <div class="container mx-0 px-5 w-100">
         <div class="row align-items-center">
             <?php if (have_rows('header_alert', 'option')): $counter = 1; while(have_rows('header_alert', 'option')): the_row();  
             $text_align;
