@@ -130,7 +130,6 @@ article:last-of-type {
         .mobile-nav-container .mobile-nav ul li a {
           font-size: 20px;
           color: #684e69;
-          padding-left: 10px;
           display: block;
           padding: 20px 10px; }
         .mobile-nav-container .mobile-nav ul li:hover {
@@ -194,9 +193,9 @@ article:last-of-type {
     display: inline-block; }
 
 .top-nav .woocommerce-cart-icon-container {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 10px; }
+  position: absolute;
+  top: 23%;
+  right: 10px; }
   .top-nav .woocommerce-cart-icon-container a {
     color: grey; }
 

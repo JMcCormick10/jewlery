@@ -86,7 +86,6 @@
                 a {
                     font-size: 20px;
                     color: $purple;
-                    padding-left: 10px;
                     display: block;
                     padding: 20px 10px;
 
@@ -173,9 +172,9 @@
         }
     }
     .woocommerce-cart-icon-container{
-        display: inline-block;
-        vertical-align: middle;
-        padding-left: 10px;
+        position: absolute;
+        top: 23%;
+        right: 10px;
         a {
             color: grey;
         }
