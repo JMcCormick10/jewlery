@@ -187,6 +187,8 @@ article:last-of-type {
           color: #3b3443; }
   .top-nav .nav-logo-container .left-header-nav li {
     padding: 0 20px; }
+  .top-nav .nav-logo-container .left-header-nav #menu-left-header-menu-1 {
+    padding-left: 40px; }
   .top-nav .nav-logo-container .right-header-nav li {
     padding: 0 20px; }
   .top-nav .nav-logo-container .logo-container {
@@ -246,6 +248,8 @@ article:last-of-type {
   vertical-align: top; }
 
 @media screen and (max-width: 1200px) {
+  .top-nav .nav-logo-container .header-nav ul #menu-left-header-menu-1 {
+    padding-left: 0; }
   .top-nav .nav-logo-container .header-nav ul li {
     padding: 0 15px; } }
 
