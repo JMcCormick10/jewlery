@@ -151,8 +151,33 @@
                 li {
                     display: inline-block;
                     font-size: 14px;
+                    position: relative;
                     a{
                         color: $purpleText;
+                    }
+                }
+
+                li:hover > ul{
+                    display:block;
+
+                    li {
+                        overflow: visible;
+                        padding: 0;
+                        padding: 5px 16px;
+                    }
+                }
+
+                .sub-menu {
+                    display: none;
+                    position: absolute;
+                    background: #fff;
+                    border: 1px black;
+                    z-index: 1;
+
+                    li {
+                        overflow: hidden;
+                        border-bottom: 1px solid #e5e5e5;
+                        min-width: 140px;
                     }
                 }
             }
@@ -258,3 +283,4 @@
         }
     }
 }
+
