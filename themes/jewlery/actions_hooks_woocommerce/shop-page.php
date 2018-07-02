@@ -1,10 +1,12 @@
 <?php
+//remove til further notice //
 
-add_action('woocommerce_before_main_content', 'display_shop_banner');
+/* add_action('woocommerce_before_main_content', 'display_shop_banner');
+
 
 function display_shop_banner(){
     get_template_part('partial-templates/shop-banner');
-}
+}*/
 
 
 add_action( 'init', 'woo_remove_wc_breadcrumbs' );
