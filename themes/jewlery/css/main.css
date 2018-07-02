@@ -350,7 +350,8 @@ article:last-of-type {
       left: 50%;
       color: #fff;
       width: 100%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      padding: 0 20px; }
       .category-container .category-info-container .category-info .intention-title {
         display: inline-block;
         padding-bottom: 5px;
