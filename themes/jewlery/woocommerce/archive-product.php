@@ -47,16 +47,18 @@ else {
 ?>
 
 <section class="woocommerce-shop-container">
+<!--    <?php /*if (!empty($shop_banner_description)): */?>
     <div class="container ">
         <div class="row">
             <div class="col-lg-8 ml-auto mr-auto">
                 <div class="shop-banner-text-container">
-                    <h2 class="shop-banner-title text-center"><?php echo $shop_banner_title;?></h2>
-                    <div class="shop-banner-description"><?php echo $shop_banner_description;?></div>
+                    <h2 class="shop-banner-title text-center"><?php /*echo $shop_banner_title;*/?></h2>
+                    <div class="shop-banner-description"><?php /*echo $shop_banner_description;*/?></div>
                 </div>
             </div>
         </div>
     </div>
+    --><?php /*endif */?>
     <div class="container full-width-mobile-container">
         <div class="row">
             <div class="col-12">
