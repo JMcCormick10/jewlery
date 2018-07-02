@@ -391,12 +391,14 @@ article:last-of-type {
     font-size: 14px; }
 
 .woocommerce-shop-container, .woocommerce-single-product-container {
-  margin-top: -450px; }
+  padding: 0; }
   .woocommerce-shop-container .shop-list-wrapper, .woocommerce-single-product-container .shop-list-wrapper {
     background-color: #fff;
     padding: 20px 10px 0 20px;
     border: 2px solid #e4c3cf;
-    border-bottom: 0; }
+    border-bottom: 0;
+    border-top: 0;
+    height: 100%; }
     .woocommerce-shop-container .shop-list-wrapper .woocommerce-products-header, .woocommerce-single-product-container .shop-list-wrapper .woocommerce-products-header {
       float: left;
       width: 50%; }
@@ -442,9 +444,6 @@ article:last-of-type {
 /*------------------------------------*\
             SINGLE PRODUCT
 \*------------------------------------*/
-.woocommerce-single-product-container {
-  margin-top: -350px; }
-
 .woocommerce div.product .product_title {
   font-size: 15px;
   margin-bottom: 15px; }
