@@ -44,6 +44,8 @@ do_action( 'woocommerce_before_main_content' );
 
                             <?php endwhile; // end of the loop. ?>
                             <?php if (have_rows('product_materials')):?>
+                            <h3>Featured Materials</h3>
+                            <hr>
                             <div class="material-container row">
                                 <?php while(have_rows('product_materials')): the_row();
                                 $material_image = get_sub_field('material_image');
@@ -52,6 +54,7 @@ do_action( 'woocommerce_before_main_content' );
                                 ?>
                                 <div class="col-lg-3 col-sm-6 col-12 col-12">
                                     <div class="category-container">
+
                                         <img src="<?php echo $material_src;?>" alt="<?php echo $material_alt;?>"/>
                                         <div class="category-info-container">
                                             <div class="category-info">
