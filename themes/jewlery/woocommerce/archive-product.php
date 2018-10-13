@@ -87,6 +87,8 @@ else {
                         $title        = '';  
                         $empty        = 0;
 
+                        $current=get_queried_object()->term_id;
+
                         $args = array(
                                 'taxonomy'     => $taxonomy,
                                 'orderby'      => $orderby,
@@ -101,8 +103,10 @@ else {
                         ?>
                         <div class="cat-search-container">
                             <select class="category-changer">
-                                <?php foreach ($cats as $cat) :?>
-                                    <option value="<?php echo $cat->slug;?>"><?php echo $cat->name;?></option>
+                                <?php foreach ($cats as $cat):
+                                    $selected  = $current == $cat->term_id ? 'selected' : ''
+                                ?>
+                                    <option value="<?php echo $cat->slug;?>" <?php echo $selected ?>><?php echo $cat->name;?></option>
                                 <?php endforeach ?>
                             </select>
                         </div>
