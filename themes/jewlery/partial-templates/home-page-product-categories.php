@@ -5,12 +5,20 @@
     <div class="inner-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-md-center text-lg-left">
-                    <h2 class="shop-intention-title">Shop Moon Jewels</h2>
-                </div>
+            <?php
+            $currentCat = '';
+            foreach ($categories as $category):
+
+            if($category->parent !== $currentCat):
+
+              $getParent = get_term($category->parent);
+              $categoryParName = $getParent->name;
+            ?>
+            <div class="col-12 text-md-center text-lg-left">
+                <h2 class="shop-intention-title">Shop <?php echo $categoryParName ?></h2>
             </div>
-            <div class="row">
-            <?php foreach ($categories as $category):
+            <?php
+                endif;
             $image_id = get_woocommerce_term_meta($category->term_id, 'thumbnail_id', true);
             $image = wp_get_attachment_image_src($image_id)[0];?>
             <div class="col-md-3 col-12">
@@ -25,9 +33,12 @@
                         </div>
                     </a>
                 </div>
-
             </div>
-            <?php endforeach;?>
+
+            <?php
+                $currentCat = $category->parent;
+                endforeach;
+            ?>
             </div>
         </div>
     </div>
