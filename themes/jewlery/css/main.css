@@ -31,6 +31,13 @@ article:last-of-type {
   padding: 0;
   padding-top: 20px; }
 
+.basic-section .chris_sher {
+  display: flex;
+  align-items: flex-end !important; }
+
+.basic-section .chris_sher img {
+  vertical-align: bottom; }
+
 .basic-section .basic-section-image {
   width: 100%; }
 
